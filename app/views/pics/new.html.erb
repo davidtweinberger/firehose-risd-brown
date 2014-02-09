@@ -1,15 +1,17 @@
-<div class="span6 offset3 text-center steamy-hottub">
-	<h1 class="custom-font">
-		Add your pic of hot-tub coding!
-	</h1>	
+<div class="row-fluid">
+	<div class="span6 offset3 text-center steamy-hottub">
+		<h1 class="custom-font">
+			Add your pic of web-app coding! #invoke_coffee
+		</h1>	
 
-	<br />
+		<br />
 
-		<%= simple_form_for @pic do |f| %> 
-			<%= f.input :hour, placeholder: '1, 2, 3, etc.', label: 'What hour was this?' %> <br />
-			<%= f.input :emotion, placeholder: 'Stoked, excited, confused?', label: 'How did you feel?' %> <br />
-			<%= f.input :learned, placeholder: 'HTML, CSS3, Rails, Ruby, Github, etc.', label: 'What did you learn?' %>
-			<br />
-			<%= f.submit 'Save', :class => 'btn btn-warning btn-large' %>
-		<% end %>
+			<%= simple_form_for @pic do |f| %> 
+				<%= f.input :hour, placeholder: '1, 2, 3, etc.', label: 'What hour was this?' %> <br />
+				<%= f.input :emotion, placeholder: 'Stoked, excited, confused?', label: 'How did you feel?' %> <br />
+				<%= f.input :learned, placeholder: 'HTML, CSS3, Rails, Ruby, Github, etc.', label: 'What did you learn?' %>
+				<br />
+				<%= f.submit 'Save', :class => 'btn btn-warning btn-large' %>
+			<% end %>
+	</div>
 </div>
