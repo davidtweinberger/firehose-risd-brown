@@ -7,10 +7,10 @@
 		<br />
 
 			<%= simple_form_for @pic do |f| %> 
-				<%= f.input :hour, placeholder: '1, 2, 3, etc.', label: 'What hour was this?' %> <br />
+				<%= f.input :hour, placeholder: '1, 2, 3, etc.', label: 'What time was this?' %> <br />
 				<%= f.input :image, label: 'Selfie' %> <br />
 				<%= f.input :emotion, placeholder: 'Stoked, excited, confused?', label: 'How did you feel?' %> <br />
-				<%= f.input :learned, placeholder: 'HTML, CSS3, Rails, Ruby, Github, etc.', label: 'What did you learn?' %> <br />
+				<%= f.input :learned, placeholder: 'HTML, CSS3, Rails, Ruby, Github, etc.', label: 'What are you learning?' %> <br />
 				<%= f.submit 'Save', :class => 'btn btn-warning btn-large' %>
 			<% end %>
 	</div>
