@@ -1,23 +1,25 @@
 
 
 <% @pics.each do |pic| %>
-	<div class="span4 text-center steamy-hottub">
+	<div class="row-fluid">
+		<div class="span4 offset4 text-center steamy-hottub">
 
-		<h1 class="custom-font">
-		Hour: <%= pic.hour %> 
-		<br />
-		</h1>
-
-		<%= image_tag pic.image %>
-
-		<h2>
+			<h1 class="custom-font">
+			Hour: <%= pic.hour %> 
 			<br />
-			Emotion: <%= pic.emotion %> 
-			<br /> <br />
-			Learned: <%= pic.learned %>
-			<br />
-		</h2>
+			</h1>
 
+			<%= image_tag pic.image %>
+
+			<h2>
+				<br />
+				Emotion: <%= pic.emotion %> 
+				<br /> <br />
+				Learned: <%= pic.learned %>
+				<br />
+			</h2>
+
+		</div>
 	</div>
 <% end %>
 
